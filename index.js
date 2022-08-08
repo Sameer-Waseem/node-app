@@ -18,7 +18,8 @@ const port = process.env.PORT || 5000;
 
 await mongoose
   .connect(
-    "mongodb+srv://sameerwaseem:sameer123@vidly.fbjbeoz.mongodb.net/?retryWrites=true&w=majority"
+    "mongodb+srv://sameerwaseem:sameer123@vidly.fbjbeoz.mongodb.net/?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log("Connected to MongoDB..."))
   .catch((error) => console.log("Could not connected to MongoDB...", error));
