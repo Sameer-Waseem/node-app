@@ -16,7 +16,7 @@ require("./startup/prod")(app);
 
 const port = process.env.PORT || 5000;
 
-await mongoose
+mongoose
   .connect(
     "mongodb+srv://sameerwaseem:sameer123@vidly.fbjbeoz.mongodb.net/?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
