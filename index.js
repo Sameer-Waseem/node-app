@@ -16,7 +16,7 @@ require("./startup/prod")(app);
 
 const port = process.env.PORT || 5000;
 
-mongoose
+await mongoose
   .connect(
     "mongodb+srv://sameerwaseem:sameer123@vidly.fbjbeoz.mongodb.net/?retryWrites=true&w=majority"
   )
