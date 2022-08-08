@@ -17,7 +17,9 @@ require("./startup/prod")(app);
 const port = process.env.PORT || 5000;
 
 mongoose
-  .connect("mongodb://localhost/genres")
+  .connect(
+    "mongodb+srv://MuhammadAhmed:ahmed123@freecluster.9t35wza.mongodb.net/?retryWrites=true&w=majority"
+  )
   .then(() => console.log("Connected to MongoDB..."))
   .catch((error) => console.log("Could not connected to MongoDB...", error));
 
